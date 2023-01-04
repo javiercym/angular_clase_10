@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <article>
+                <form action="">
+                    <input type="text" class="form-control" [(ngModel)]="nombreTarea" name="nombreTarea" placeholder="Ingresa nombre tarea">
+                    <br>
+                    <input type="text" class="form-control" [(ngModel)]="descripcion" name="descripcion" placeholder="Ingresa Descripción">
+                    <br>
+                    <div class="guardar">
+                        <button type="submit" class="btn btn-outline-primary" (click)="guardarDatos()">Añadir</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+
+        <div class="col-6">
+            <app-lateral  ></app-lateral>
+        </div>
+    </div>
+</div>
