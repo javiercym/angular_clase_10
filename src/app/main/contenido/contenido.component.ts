@@ -10,11 +10,11 @@ export class ContenidoComponent {
   descripcion!: string;
   datos: any[] = [];
 
-  @Output() cambiarNomnbre = new EventEmitter<any[]>();
+  @Output() enviardata = new EventEmitter<any[]>();
 
   guardarDatos(){
     this.datos.push({nombreTarea: this.nombreTarea, descripcion: this.descripcion})
 
-    this.cambiarNomnbre.emit(this.datos)
+    this.enviardata.emit(this.datos)
   }
 }

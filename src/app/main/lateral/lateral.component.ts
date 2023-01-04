@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-lateral',
@@ -6,9 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./lateral.component.css']
 })
 export class LateralComponent {
-  datos: any[];
-  
-  constructor() {
-    this.datos = [];
-}
+  @Input()  datosLateral: any[] = [];
+
 }
